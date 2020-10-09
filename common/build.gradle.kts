@@ -18,6 +18,8 @@ dependencies {
     annotationProcessor("org.projectlombok:lombok")
     implementation(kotlin("stdlib-jdk8"))
     implementation(kotlin("reflect"))
+    implementation("org.springframework:spring-context")
+
 }
 tasks.getByName<BootJar>("bootJar") {
     enabled = false
